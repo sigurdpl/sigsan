@@ -25,7 +25,8 @@ ApplicationWindow {
 
     MainForm {
         anchors.fill: parent
-        button1.onClicked: messageDialog.show(qsTr("U lost"))
+ //       button1.onClicked: messageDialog.show(qsTr("U lost"))
+        button1.onClicked: color = "red"
         button2.onClicked: messageDialog.show(qsTr("Right answer"))
         button3.onClicked: messageDialog.show(qsTr("Try again"))
         button4.onClicked: messageDialog.show(qsTr("Explosion"))
