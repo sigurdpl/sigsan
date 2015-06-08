@@ -24,14 +24,15 @@ ApplicationWindow {
     }
 
     MainForm {
+        anchors.topMargin: 0
         anchors.fill: parent
  //       button1.onClicked: messageDialog.show(qsTr("U lost"))
-        button1.onClicked: color = "red"
+        button1.onClicked: color = "green"
         button2.onClicked: messageDialog.show(qsTr("Right answer"))
-        button3.onClicked: messageDialog.show(qsTr("Try again"))
+        button3.onClicked: color = "blue"
         button4.onClicked: messageDialog.show(qsTr("Explosion"))
         button5.onClicked: messageDialog.show(qsTr("Selma er super pen"))
-        button6.onClicked: messageDialog.show(qsTr("Mamma GGGGGGGGGGGG"))       }
+        button6.onClicked: color = "purple"       }
 
     MessageDialog {
         id: messageDialog
