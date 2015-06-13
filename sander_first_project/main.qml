@@ -2,6 +2,7 @@ import QtQuick 2.4
 import QtQuick.Controls 1.3
 import QtQuick.Window 2.2
 import QtQuick.Dialogs 1.2
+import QtQuick.Layouts 1.1
 
 ApplicationWindow {
     title: qsTr("Hello World")
@@ -9,6 +10,7 @@ ApplicationWindow {
     height: 400
     visible: true
     property var add: 0
+    property var toggle: 0
 
     menuBar: MenuBar {
         Menu {
@@ -24,18 +26,20 @@ ApplicationWindow {
         }
     }
 
-    Row {
+    RowLayout {
         id: adder
         anchors.left: parent.left
         anchors.margins: 10
-        anchors.top: parent.top - 10
+        anchors.top: parent.top
+        anchors.topMargin: 5
         Button {
             id: addButton
             text: qsTr("add")
-            onClicked: { add = add + 1 ; textField.text = add.toFixed()  }
+            onClicked: { add = add + 1 ; textField.text = add.toString()  }
         }
         TextField {
             id: textField
+            horizontalAlignment: TextInput.AlignHCenter
             anchors.left: addButton.right
             anchors.margins: 5
             text: qsTr( "0" )
@@ -43,17 +47,19 @@ ApplicationWindow {
         }
     }
 
-    Row {
+    RowLayout {
         id: selma
         anchors.left: adder.left
         anchors.top: adder.bottom
+        anchors.topMargin: adder.anchors.topMargin
         Button {
             text: "Selma"
-            onClicked: { selmaField.text = "Selma er fin"; }
+            onClicked: { toggle = !toggle; toggle===true ? selmaField.text = "Selma er fin" :
+                                                          selmaField.text = "Selmaaaaa"; }
         }
         TextField {
             id: selmaField
-
+            horizontalAlignment: TextInput.AlignHCenter
         }
     }
 
