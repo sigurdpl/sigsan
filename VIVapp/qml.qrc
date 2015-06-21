@@ -1,6 +1,8 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
-        <file>MainForm.ui.qml</file>
+        <file>WineScoreItem.qml</file>
+        <file>WineTasteParameterItem.qml</file>
+        <file>TasteParameterDescription.qml</file>
     </qresource>
 </RCC>

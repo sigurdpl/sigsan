@@ -4,8 +4,9 @@ import QtQuick.Window 2.2
 import QtQuick.Dialogs 1.2
 import QtQuick.Layouts 1.1
 
+
 ApplicationWindow {
-    title: qsTr("Hello World")
+    title: qsTr("VIVapp")
     width: 640
     height: 480
     visible: true
@@ -21,20 +22,29 @@ ApplicationWindow {
         }
     }
 
-    MainForm {
+    RowLayout {
         anchors.fill: parent
-        button1.onClicked: messageDialog.show(qsTr("Button 1 pressed"))
-        button2.onClicked: messageDialog.show(qsTr("Button 2 pressed"))
-        button3.onClicked: messageDialog.show(qsTr("Button 3 pressed"))
-    }
-
-    MessageDialog {
-        id: messageDialog
-        title: qsTr("May I have your attention, please?")
-
-        function show(caption) {
-            messageDialog.text = caption;
-            messageDialog.open();
+        property var heightList: [50, 75, 75, 75, 75, 50]
+        TasteParameterDescription
+        {
+            id: tasteDescription
+            anchors.top: parent.top
+            width: 100
         }
+
+        RowLayout {
+            id: winesToEvaluate
+            anchors.left: tasteDescription.right
+            anchors.leftMargin: 5
+            anchors.top: parent.top
+            WineScoreItem { wineName: "rioja" ;/*scoreHeigthList: parent.heightList */}
+            WineScoreItem { wineName: "barolo" ; /*scoreHeigthList: parent.heightList */}
+            WineScoreItem { wineName: "barbera" ;/* scoreHeigthList: parent.heightList */}
+            WineScoreItem { wineName: "brunello" ; /*scoreHeigthList: parent.heightList */}
+            WineScoreItem { wineName: "chardonnay"; /*scoreHeigthList: parent.heightList */}
+            WineScoreItem { wineName: "bourgogne" ; /*scoreHeigthList: parent.heightList */}
+
+        }
+
     }
 }

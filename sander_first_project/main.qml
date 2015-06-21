@@ -91,6 +91,7 @@ ApplicationWindow {
         anchors.left: familyView.right
         anchors.leftMargin: 10
         model: family
+        frameVisible: false
         TableViewColumn {
             role: "name"
             title: "Name"
