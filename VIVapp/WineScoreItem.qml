@@ -7,7 +7,6 @@ ColumnLayout {
     width: 150
     property alias wineName: wineItemName.name
     property var scoreHeigthList: [50, 50, 50, 50 , 50, 50]
-    property alias totalPoints: winePoints.totalPoints
     Rectangle {
         id: wineItemName
         property string name: "wine"
@@ -63,9 +62,15 @@ ColumnLayout {
         anchors.topMargin: 5
         color: "grey"
         property real totalPoints: 0
+        property bool newPoint: false
+        onNewPointChanged:  {
+            totalPoints = wineColor.points + wineTaste.points +
+                    wineSmell.points + wineOverall.points ;
+            newPoint = false;
+        }
         Text {
             anchors.centerIn: parent
-            text: totalPoints.toString()
+            text: parent.totalPoints.toString()
         }
     }
 }

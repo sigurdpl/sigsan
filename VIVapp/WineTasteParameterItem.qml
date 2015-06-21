@@ -4,6 +4,7 @@ import QtQuick.Controls 1.2
 Rectangle {
     property real maxPoints: 0
     property real points: 0
+    onPointsChanged: { winePoints.newPoint = true; pointsBox.text = points.toString(); }
     width: 100
     height: 100
     TextInput {
@@ -14,15 +15,20 @@ Rectangle {
 
     }
     TextInput {
+        id: pointsBox
         width: parent.width - comments.width
         height: parent.height
         anchors.left: comments.right
-        text: parent.points.toString()
-        onAccepted: { parent.points = toPoints( text ) ; }
+        text: "0"
+        onAccepted: { parent.points = toPoints( text, parent.maxPoints ) ; }
     }
-    function toPoints(input) {
+    function toPoints(input, maxPoints) {
         var num = parseFloat(input);
-        return isNaN(num) ? 0 : num ;
+        if ( isNaN(num) )
+            return 0;
+        if ( num > maxPoints || num < 0)
+            return 0;
+        return num ;
     }
 
 }
