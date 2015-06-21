@@ -7,6 +7,7 @@ ColumnLayout {
     width: 150
     property alias wineName: wineItemName.name
     property var scoreHeigthList: [50, 50, 50, 50 , 50, 50]
+    property alias totalPoints: winePoints.totalPoints
     Rectangle {
         id: wineItemName
         property string name: "wine"
@@ -53,5 +54,18 @@ ColumnLayout {
         height: parent.scoreHeigthList[4]
         anchors.top: wineTaste.bottom
         anchors.topMargin: 5
+    }
+    Rectangle {
+        id: winePoints
+        width: parent.width
+        height: parent.scoreHeigthList[5]
+        anchors.top: wineOverall.bottom
+        anchors.topMargin: 5
+        color: "grey"
+        property real totalPoints: 0
+        Text {
+            anchors.centerIn: parent
+            text: totalPoints.toString()
+        }
     }
 }

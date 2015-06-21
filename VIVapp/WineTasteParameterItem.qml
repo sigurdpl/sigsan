@@ -6,21 +6,24 @@ Rectangle {
     property real points: 0
     width: 100
     height: 100
-    TextField {
+    TextInput {
         id: comments
         width: parent.width * 0.8
         height: parent.height
-        placeholderText: qsTr("comments")
+        text: qsTr("comments")
 
     }
-    TextField {
+    TextInput {
         width: parent.width - comments.width
         height: parent.height
         anchors.left: comments.right
-        placeholderText: parent.points.toString()
-       // onAccepted: parent.points = points(text)
+        text: parent.points.toString()
+        onAccepted: { parent.points = toPoints( text ) ; }
     }
-   // function points(input) { return parseInt(input) ; }
+    function toPoints(input) {
+        var num = parseFloat(input);
+        return isNaN(num) ? 0 : num ;
+    }
 
 }
 
