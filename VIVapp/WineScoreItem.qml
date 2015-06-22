@@ -60,7 +60,7 @@ ColumnLayout {
         height: parent.scoreHeigthList[5]
         anchors.top: wineOverall.bottom
         anchors.topMargin: 5
-        color: "grey"
+        color: "lightgrey"
         property real totalPoints: 0
         property bool newPoint: false
         onNewPointChanged:  {
