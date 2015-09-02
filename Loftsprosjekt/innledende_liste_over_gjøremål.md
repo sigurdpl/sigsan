@@ -5,6 +5,7 @@ Terrasse på øverside blir midlertidlig rettet opp og spikret med OSB plater. M
 
 Stillas på de andre 3 sidene
 (settes opp av firma)
+Inkludert i prisen
 
 ## Støping under ny yttergang
 Dytte sement inn under der
@@ -47,6 +48,7 @@ Monteres med avstivning
 
 ## Limtredrager (den store)
 Montasje med kranbil
+Kranbil inkludert i prisen
 
 ## Taket
 2x8" med pålimt og skrudd 2x4 (polytanlim) pga langt spenn. Det blir 30cm tykt tak
@@ -73,6 +75,9 @@ Bruke ekisterende men må renses
 ## Kle huset
 Ny panel ikke helt lik gamle fordi den er utgått på dato, derfor forslag om å fore ut 2-3 cm
 
+# Rive eksisterende tak
+Bortkjøring er inkludert i prisen
+
 ## Montere dører og vinduer
 
 ## Terrasse sør sluttføring
@@ -92,6 +97,11 @@ Skjøte på eksisterende
 Pipebeslag og 2 luftinger
 
 
+## Ekstra
+Oppgaver som kommer i tillegg
+
+* forlengelse av gulv innvendig
+* sveising av membran på terasse sør
 
 
 ## diverse punkter
