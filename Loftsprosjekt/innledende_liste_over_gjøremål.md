@@ -25,12 +25,13 @@ De nye sperrene (150 x 20cm) må ut mot sør
 12mm OSB-plater 
 Luftelyre inntil veggen (alternativ med åpning i front, veldig kort)
 Membran 
+Sveising av membran kommer i tillegg.
 
 ## åpner alle yttervegger
 Skjærer opp taket for å sette på taksviller etc.
 
 ## Loftet for vår del
-Lagrinsplass i midten, presenning over.
+Lagrinfsplass i midten, presenning over.
 Tetter igjen loftstrappa
 Tetter igjen gavlveggene med OSB for avstiving
 
@@ -63,6 +64,7 @@ Slisser og lekter
 Åpent i mønet (luftelyre)
 
 ## Takstein eller bølgetak
+Takstein koster ca 25000kr innkludert løft.
 
 ## Vindskier
 Vindskier
@@ -75,10 +77,13 @@ Bruke ekisterende men må renses
 ## Kle huset
 Ny panel ikke helt lik gamle fordi den er utgått på dato, derfor forslag om å fore ut 2-3 cm
 
-# Rive eksisterende tak
+## Rive eksisterende tak
 Bortkjøring er inkludert i prisen
 
 ## Montere dører og vinduer
+Det blir 6 140cm vinduer
+x 2 60 vinduer
+2 Dører
 
 ## Terrasse sør sluttføring
 Dette gjør jeg
@@ -97,11 +102,10 @@ Skjøte på eksisterende
 Pipebeslag og 2 luftinger
 
 
-## Ekstra
-Oppgaver som kommer i tillegg
+## Annet
+* forlengelse av gulv innvendig fordi det er høydeforskjell mellom øst og vest siden. Dette er inkludert. Avstanden er ca 160cm.
 
-* forlengelse av gulv innvendig
-* sveising av membran på terasse sør
+* sveising av membran på terasse sør. Må ha egen fagperson til dette med sertifikat.
 
 
 ## diverse punkter
